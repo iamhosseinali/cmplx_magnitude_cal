@@ -13,4 +13,4 @@ create_clock -period 10 -name default
 #csim_design
 csynth_design
 #cosim_design
-export_design -format ip_catalog
+export_design -rtl vhdl -format ip_catalog -description "An IP to calculate the magnitude of incomming complex numbers stream. " -vendor "Taksun" -version "1.0.0"
