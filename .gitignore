@@ -11,3 +11,4 @@
 !src/*
 !solution1/script.tcl
 !solution1/directives.tcl
+!*.md
