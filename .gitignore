@@ -1,0 +1,13 @@
+# Ignore everything in the project
+*
+
+# Allow .gitignore itself to be tracked
+!.gitignore
+
+# Allow Git to traverse all directories
+!*/
+
+# Allow specific file globally
+!src/*
+!solution1/script.tcl
+!solution1/directives.tcl
