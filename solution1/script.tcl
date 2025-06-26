@@ -13,5 +13,5 @@ create_clock -period 10 -name default
 #source "./cmplx_magnitude_cal/solution1/directives.tcl"
 csim_design
 csynth_design
-cosim_design
+cosim_design -wave_debug -trace_level all -rtl vhdl -tool xsim
 export_design -rtl vhdl -format ip_catalog -description "An IP to calculate the magnitude of incomming complex numbers stream. " -vendor "Taksun" -version "1.0.0"
