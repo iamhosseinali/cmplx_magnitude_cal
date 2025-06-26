@@ -29,7 +29,7 @@ void mag_cal(stream<inDataType >&in, stream<outDataType >&out) {
 	outDataType out_data;
 	ap_int<IMG_REAL_WIDTH> real_in,imag_in;
 	ap_uint<IMG_REAL_WIDTH*2> temp_r,temp_i;
-	ap_ufixed<IMG_REAL_WIDTH*2,IMG_REAL_WIDTH*2> temp_sum;
+	ap_ufixed<IMG_REAL_WIDTH*2,IMG_REAL_WIDTH> temp_sum;
 
 	for(int i=0;i<FFT_LENGTH;i++)
 	{

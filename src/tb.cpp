@@ -50,7 +50,6 @@ int main() {
                   << ", error = " << error
                   << ", tLAST = " << result.tLAST << "\n";
 
-        // Optional: check for too much error
         if (error > 0.3f) {
             std::cout << "ERROR too large at sample " << i << "\n";
             return 1;
