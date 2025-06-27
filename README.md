@@ -22,13 +22,12 @@ The result is a 32-bit **unsigned fixed-point** value with fractional precision.
 
 - Input via **AXI4-Stream** (`inDataType`)
 - Output via **AXI4-Stream** (`outDataType`)
-- Fully pipelined for 1-sample-per-cycle throughput
 - Configurable precision and FFT size
 
 ---
 
 
-```
+
 
 * `tDATA`: 32-bit unsigned fixed-point (16 int + 16 frac bits)
 * `tLAST`: AXIS signal marking the last sample in the stream
@@ -39,7 +38,7 @@ The result is a 32-bit **unsigned fixed-point** value with fractional precision.
 
 Modify these macros to tune the design:
 
-```cpp
+```
 #define FFT_LENGTH      1024   // Number of complex samples per batch
 #define IMG_REAL_WIDTH  16     // Bit-width for real and imaginary parts
 ```
